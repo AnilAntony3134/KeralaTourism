@@ -11,15 +11,24 @@
     
     <header>
         <img src="assets/images/logo.png" class="header-logo">
-        <nav class="main-nav">
+         <nav class="main-main-nav">
+        <img src="assets/images/logo.png" class="header-logo">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="main-nav">
+          
             <ul>
-                <li><a href="SignUp.html">Sign Up</a></li>
-                <li><a href="index.html">Districts</a></li>
-                <li><a href="index.html">Explore</a></li>
-                <li><a href="index.html" >Brief</a></li>
-                <li><a href="index.html">Home</a></li>
+              <li><a href="index.html #top">Home</a></li>
+              <li><a href="index.html #about" >Brief</a></li>
+              <li><a href="index.html #projects">Explore</a></li>
+              <li><a href="index.html #testimonials">Districts</a></li>
+              <li><a href="SignUp.html">Sign Up</a></li>     
             </ul>
-        </nav>
+        </div>
+      </nav>
     </header>
     <div class="bg">
     <form> 
@@ -55,5 +64,13 @@
             </ul>
         </div>
     </footer>
+    <script>
+      const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('main-nav')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+      </script>
 </body>
 </html>
