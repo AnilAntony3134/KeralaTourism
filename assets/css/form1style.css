@@ -12,6 +12,9 @@
     justify-content: center;
     height: 100vh;
 }
+body{
+    background-size: cover;
+}
 
 form{
     margin-top: 10px;
